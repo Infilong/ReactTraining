@@ -1,12 +1,18 @@
-const Header = ({para}) => {
+import PropTypes from "prop-types";
+
+const Header = ({ title }) => {
   return (
     <header>
-      <h1>{para}</h1>
+      <h1>{title}</h1>
     </header>
   );
 };
 
-Header.defaultProps={
-  para: "Default property"
-}
+Header.defaultProps = {
+  title: "Default property",
+};
+
+Header.propTypes = {
+  title: PropTypes.string
+};
 export default Header;
