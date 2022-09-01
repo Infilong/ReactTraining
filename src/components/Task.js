@@ -7,6 +7,7 @@ const Task = ({ task, onDelete }) => {
         {task.text}
         <FaTimes
           style={{ color: "red", cursor: "pointer" }}
+        // deleteTask step2: Task's onDelete is deleteTask function   
           onClick={() => onDelete(task.id)}
         />
       </h3>

@@ -34,6 +34,7 @@ const App = () => {
     <>
       <div className="container">
         <Header title={"Header propTypes string example"} />
+        {/* deleteTask step1: onDelete is assigned deleteTask function */}
         <Tasks tasks={tasks} onDelete={deleteTask} />
       </div>
     </>
